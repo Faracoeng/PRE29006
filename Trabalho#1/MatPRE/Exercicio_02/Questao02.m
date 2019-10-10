@@ -5,7 +5,7 @@ clc;
 rand_pascal(5,0.5);
 %% Questão 1.b
 
-NExp = 100000;
+NExp = 10000;
 k = 490;
 k_01 = 2;
 k_02 = 5;
@@ -34,26 +34,24 @@ end
 histograma_01 = hist(vet01,k_01:k);
 pmf_01_simul = histograma_01 / NExp;
 
-figure ; 
+figure(1); 
 bar(k_01:k,pmf_01_simul,'b');
-%hold on;
-xlim([-2 max(10)+2]);
+hold on;
+xlim([-2 max(vet01)+2]);
 %--------------Plot experimento 02----
 histograma_02 = hist(vet02,k_02:k);
 pmf_02_simul = histograma_02 / NExp;
 
-figure ;
+figure(2);
 bar(k_02:k, pmf_02_simul,'r');
-%hold on;
-xlim([-2 max(10)+2]);
+hold on;
+xlim([-2 max(vet02)+2]);
 % %----------Plot teorico 01---------------
-figure 
+figure(1)
 stem(k_01:k,vetTeorico01);
-xlim([-2 max(10)+2]);
 % %----------Plot teorico 02---------------
-figure 
+figure(2)
 stem(k_02:k,vetTeorico02);
-xlim([-2 max(10)+2]);
 %-----variância 01-----
 var(pmf_01_simul)
 mean(pmf_01_simul)

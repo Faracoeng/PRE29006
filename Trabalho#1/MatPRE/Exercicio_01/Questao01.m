@@ -37,7 +37,7 @@ end
 histograma_01 = hist(vet01,0:n_01);
 pmf_01_simul = histograma_01 / NExp;
 
-figure 1; 
+figure(1); 
 bar(0:n_01, pmf_01_simul,'b');
 hold on;
 xlim([-2 max(vet01)+2]);
@@ -45,16 +45,16 @@ xlim([-2 max(vet01)+2]);
 histograma_02 = hist(vet02,0:n_02);
 pmf_02_simul = histograma_02 / NExp;
 
-figure 2;
+figure(2);
 bar(0:n_02, pmf_02_simul,'r');
 hold on;
 xlim([-2 max(vet02)+2]);
 %----------Plot teorico 01---------------
-figure 1
+figure(1)
 stem(0:n_01,vetTeorico01);
 xlim([-2 max(n_01)+2]);
 %----------Plot teorico 02---------------
-figure 2
+figure(2)
 stem(0:n_02,vetTeorico02);
 xlim([-2 max(n_02)+2]);
 %-----variância 01-----
