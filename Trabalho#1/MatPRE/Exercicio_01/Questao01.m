@@ -57,12 +57,11 @@ xlim([-2 max(n_01)+2]);
 figure 2
 stem(0:n_02,vetTeorico02);
 xlim([-2 max(n_02)+2]);
-%  figure(2);
-%  subplot(3,1,1);
-%  stem(n,z);
-%  subplot(3,1,2);
-%  stem(n,z1);
-%  subplot(3,1,3);
-%  stem(n,z2);
+%-----variância 01-----
+var(pmf_01_simul)
+mean(pmf_01_simul)
+%-----variância 02-----
+var(pmf_02_simul)
+mean(pmf_02_simul)
  
 
