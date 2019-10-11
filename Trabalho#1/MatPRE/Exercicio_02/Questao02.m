@@ -4,8 +4,11 @@ close all;
 clc;
 rand_pascal(5,0.5);
 %% Questão 1.b
+close all;
+clear all;
+clc;
 
-NExp = 10000;
+NExp = 100000;
 k = 490;
 k_01 = 2;
 k_02 = 5;
@@ -53,8 +56,12 @@ stem(k_01:k,vetTeorico01);
 figure(2)
 stem(k_02:k,vetTeorico02);
 %-----variância 01-----
-var(pmf_01_simul)
-mean(pmf_01_simul)
+var_01 = var(pmf_01_simul)
+med_01 = mean(pmf_01_simul)
+var_teo01 = var(vetTeorico01)
+med_teo01 = mean(vetTeorico01)
 %-----variância 02-----
-% var(pmf_02_simul)
-% mean(pmf_02_simul)
+var_02 = var(pmf_02_simul)
+med_02 = mean(pmf_02_simul)
+var_teo02 = var(vetTeorico02)
+med_teo02 = mean(vetTeorico02)

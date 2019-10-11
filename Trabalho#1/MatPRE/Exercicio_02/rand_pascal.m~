@@ -1,6 +1,0 @@
-function N = rand_pascal(k,p)
-    N = rand < p;    
-    if k > N 
-       N = 1 + rand_pascal(k-1,p); 
-    end
-return

@@ -1,10 +1,16 @@
 %% Questão 3.a i
+close all;
+clear all;
+clc;
 n = 20; % Número de pacotes transmitidos
 p = 0.9; % probabilidade
 EX = n * p
 % 18 transmissões em média;
 
 %% Questão 3.a ii
+close all;
+clear all;
+clc;
 n = 20;
 k = 0:15;
 p = 0.9;
@@ -17,12 +23,18 @@ for i = k
 end
 resultado = 1 - pr
 %% Questão 3.b i
+close all;
+clear all;
+clc;
 k = 16; % quantos sucessos são requeridos
 p = 0.9; % probabilidade
 EX = k/p 
 % 17.80 transmissões em média;
 
 %% Questão 3.b ii
+close all;
+clear all;
+clc;
 
 n = 16:20;
 p = 0.9;
