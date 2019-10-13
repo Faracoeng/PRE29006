@@ -59,13 +59,13 @@ stem(0:n_02,vetTeorico02);
 xlim([-2 max(n_02)+2]);
 %-----variância 01-----
 
-var_01 = var(vet_01)
-med_01 = mean(vet_01)
+var_01 = var(vet01)
+med_01 = mean(vet01)
 
 %-----variância 02-----
 
-var_02 = var(vet_02)
-med_02 = mean(vet_02)
+var_02 = var(vet02)
+med_02 = mean(vet02)
 
  
 
