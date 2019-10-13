@@ -1,9 +1,9 @@
-%% Questão 1.a
+%% Questão 2.a
 clear all;
 close all;
 clc;
 rand_pascal(5,0.5);
-%% Questão 1.b
+%% Questão 2.b
 close all;
 clear all;
 clc;
@@ -56,12 +56,9 @@ stem(k_01:k,vetTeorico01);
 figure(2)
 stem(k_02:k,vetTeorico02);
 %-----variância 01-----
-var_01 = var(pmf_01_simul)
-med_01 = mean(pmf_01_simul)
-var_teo01 = var(vetTeorico01)
-med_teo01 = mean(vetTeorico01)
+var_01 = var(vet01)
+med_01 = mean(vet01)
+
 %-----variância 02-----
-var_02 = var(pmf_02_simul)
-med_02 = mean(pmf_02_simul)
-var_teo02 = var(vetTeorico02)
-med_teo02 = mean(vetTeorico02)
+var_02 = var(vet02)
+med_02 = mean(vet02)
