@@ -50,12 +50,12 @@ pr
 
 
 % a.i
-NExp = 1000;
+NExp = 1000000;
 vet01 = 0:1000;
 for i = 1:NExp
    vet01(i) = rand_binom(20, 0.9);  
 end
-mean(vet01) % número médio de pacotes recebidos.
+valorEsperado_simulado = mean(vet01) % número médio de pacotes recebidos.
 
 % a.ii
 total = 0;
@@ -64,14 +64,14 @@ for i = 1:NExp
         total = total + 1;
    end 
 end
-total / NExp % Probabilidade de que o arquivo original seja recuperado
+prob_simul = total / NExp % Probabilidade de que o arquivo original seja recuperado
 
 % b.i
 vet02 = 0:1000;
 for i = 1:NExp
    vet02(i) = rand_pascal(16, 0.9);  
 end
-mean(vet02) % número médio de transmissões necessárias para que se recupere o arquivo.
+valorEsperado_simulado = mean(vet02) % número médio de transmissões necessárias para que se recupere o arquivo.
 
 % b.ii
 total02 = 0;
@@ -81,5 +81,5 @@ for i = 1:NExp
        
    end 
 end
-total02 / NExp % probabilidade de que se recupere a informação em no máximo 20 transmissões.
+prob_simul = total02 / NExp % probabilidade de que se recupere a informação em no máximo 20 transmissões.
 
