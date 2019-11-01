@@ -71,7 +71,7 @@ vet02 = 0:1000;
 for i = 1:NExp
    vet02(i) = rand_pascal(16, 0.9);  
 end
-mean(vet02) % número médio de pacotes recebidos.
+mean(vet02) % número médio de transmissões necessárias para que se recupere o arquivo.
 
 % b.ii
 total02 = 0;
@@ -81,5 +81,5 @@ for i = 1:NExp
        
    end 
 end
-total02 / NExp % Probabilidade de que o arquivo original seja recuperado
+total02 / NExp % probabilidade de que se recupere a informação em no máximo 20 transmissões.
 
