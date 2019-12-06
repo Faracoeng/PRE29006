@@ -1,6 +1,7 @@
 function p = codificacaoAMI(vet)
     a = 5;
-    for i = 1:24
+    aux = size(vet);
+    for i = 1:aux(2)
         if vet(i) == 1
             vet(i) = a;
             a = -a;
